@@ -543,6 +543,7 @@ progress {
   animation: 
     animated-text 2.5s steps(29,end) 1s 1 normal both,
     animated-cursor 600ms steps(29,end) infinite;
+    animation-delay: 1.5s;
 }
 @keyframes animated-text{
   from{width: 0;}
@@ -7527,11 +7528,11 @@ textarea.form-control-lg {
   background-color: #b7c0e2 !important;
 }
 .bg-primary {
-  background-color: #242533 !important;
+  background-color: #1d1e2b !important;
 }
 
 .bg-secondary {
-  background-color: #242533 !important;
+  background-color: #1d1e2b !important;
 }
 
 .bg-success {
@@ -11041,7 +11042,7 @@ html {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: 'Source Code Pro', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 600;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -11050,7 +11051,7 @@ html {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #b7c0e2;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #1abc9c;
