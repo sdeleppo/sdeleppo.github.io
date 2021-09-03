@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Secular+One&display=swap');
+
 /*!
 * Start Bootstrap - Freelancer v7.0.3 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2021 Start Bootstrap
@@ -518,7 +519,16 @@ summary {
 progress {
   vertical-align: baseline;
 }
-
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
 [hidden] {
   display: none !important;
 }
@@ -531,7 +541,7 @@ progress {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    animated-text 2.7s steps(29,end) 1s 1 normal both,
+    animated-text 2.5s steps(29,end) 1s 1 normal both,
     animated-cursor 600ms steps(29,end) infinite;
 }
 @keyframes animated-text{

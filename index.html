@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,24 +38,25 @@
             </div>
         </nav>
         <!-- Masthead-->
-
+        
         <header class="masthead bg-primary vertical-center text-white text-center">
             <div class="container d-flex  align-items-center flex-column">
                 <!-- Masthead Avatar Image, editted-->
                 <!--<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />-->
                 <!-- Masthead Heading-->
-                <div class="masthead-subheading col-lg-8"style="text-align: left">Hey there, I'm...</div>
+                <div class="masthead-subheading col-lg-8"style="text-align: left"><div data-aos="fade-right" data-aos-duration="1000">Hey there, I'm...</div></div>
                 <div class="typewriter">
                     <h1>Sarah Deleppo.</h1>
                   </div>
+                  
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading--><br><br>
-                <p class="masthead-subheading font-weight-light mb-0" >A software engineer who loves building ideas with code.</p><br>
+            <p class="masthead-subheading font-weight-light mb-0" >A software engineer who loves building ideas with code.</p><br>
                 <div class="align-items-center mt-4">
                     <a class="animated-link" href="#portfolio">
                         View my work
@@ -67,14 +68,15 @@
         <section class="page-section bg-primary portfolio" id="portfolio">
             <div class="container ">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-white mb-0">Projects</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div data-aos="fade-right" data-aos-duration="500"><h2 class="page-section-heading text-center text-white mb-0">Projects</h2>
+                <!-- Icon Divider--></div>
+                <div data-aos="fade-left" data-aos-duration="1000"><div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div></div>
                 <!-- Portfolio Grid Items-->
+                <div data-aos="fade-up" data-aos-duration="1000">
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -89,7 +91,7 @@
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><h4>Pavilion Pummel</h4><br>C# / Unity5<br><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/pavilion-pummel.PNG" alt="..." />
                         </div>
@@ -98,7 +100,7 @@
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><h4>Data Visualizer</h4><br>Python / MongoDB<br><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/animal-shelter.png" alt="..." />
                         </div>
@@ -107,7 +109,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><h4>Lazy Murder</h4><br>C# / Unity5<br><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/lazy-murder.png" alt="..." />
                         </div>
@@ -116,7 +118,7 @@
                     <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><h4>Coming of Darkness</h4><br>C# / Unity5<br><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/coming-of-darkness.PNG" alt="..." />
                         </div>
@@ -124,13 +126,15 @@
                     <!-- Portfolio Item 6-->
                     
                 </div>
+            </div>
                 <br>
                 <div class="text-center align-items-center mt-4">
                     <a class="animated-link" href="https://github.com/sdeleppo"target="_blank" rel="noopener noreferrer">
                         View More
                     </a>
                 </div>
-                </div>
+                
+            </div>
             </div>
         </section>
         <!-- About Section-->
@@ -139,13 +143,14 @@
             <div class="container">
                 <!-- About Section Heading-->
                 
-                <h2 class="page-section-heading text-center  text-white">About</h2>
+                <div data-aos="fade-right" data-aos-duration="500"><h2 class="page-section-heading text-center  text-white">About</h2></div>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div data-aos="fade-left" data-aos-duration="1000"><div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div></div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col ms-auto text-center"><p class="lead">Throughout my education in Computer Science, I was presented with the endless opportunities this field offers and given the chance to dip my toe into a variety of niches requiring a software engineer. This allowed me to focus on my passion and gain the skills required to develop full stack applications from start to finish in team environments. Through the use of Agile and Scrum methodologies, I concentrated on an iterative, adaptive approach to software engineering which incorporated clear communication and collaboration with teammates VIA code reviews, git version control on projects with multiple developers, and daily Scrum meetings. These methodologies also granted me experience communicating to stakeholders in relation to their products, including clients and end-users, in order to develop a high-quality end-product that is tailored to their specific needs and adapts to requested changes.</p></div>
@@ -153,27 +158,22 @@
                     <div class="col me-auto text-center"><p class="lead">My artifact presented in my portfolio is a collective representation of the knowledge I have gained throughout the Computer Science program and aligns with the target of my career goals. This is a full stack project encompassing skills from three categories of Computer Science including Software Engineering & Design, Algorithms & Data structures as well as Databases. I intend on specializing my career in full stack development, as I enjoy working on a product from beginning to end, seeing all the necessary components come together to create a cohesive end-product. This capstone allowed me to showcase the strengths and skills I’ve honed during this program, including frontend development, backend development, managing databases, and connecting all these pieces together to form one cohesive project, a Contact Manager using React, Spring Boot, and MongoDB.</p></div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://github.com/sdeleppo/spring-mongo-react"target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-download me-2"></i>
-                        Check it out!
-                    </a>
-                </div>
-            </div>
+                
+            </div></div>
         </section>
         <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <section class="page-section bg-primary" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <div data-aos="fade-right" data-aos-duration="500"><h2 class="page-section-heading text-center  text-white mb-0">Contact Me</h2></div>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div data-aos="fade-left" data-aos-duration="1000"><div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div></div>
                 <!-- Contact Section Form-->
-                <div class="row justify-content-center">
+                <div data-aos="fade-up" data-aos-duration="1000"><div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
@@ -224,9 +224,10 @@
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            
                         </form>
                     </div>
-                </div>
+                </div></div>
             </div>
         </section>
         <!-- Footer-->
@@ -532,5 +533,9 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms  * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
