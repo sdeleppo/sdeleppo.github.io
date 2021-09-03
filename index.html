@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Sarah Deleppo | Software Developer</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -15,50 +15,59 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Meet Sarah Deleppo</a>
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav" >
+            <a class="navbar-brand" href="#page-top"> <img class="logo-navbar" src="assets/img/portfolio/icon.png"> </a>
+            <div class="container align-items-left " >
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto ">
                         
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class=" nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class=" nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class=" nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#links">Links</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
+
+        <header class="masthead bg-primary vertical-center text-white text-center">
+            <div class="container d-flex  align-items-center flex-column">
                 <!-- Masthead Avatar Image, editted-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!--<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />-->
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Sarah Deleppo</h1>
+                <div class="masthead-subheading col-lg-8"style="text-align: left">Hey there, I'm...</div>
+                <div class="typewriter">
+                    <h1>Sarah Deleppo.</h1>
+                  </div>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Software Development and Engineering</p>
+                <!-- Masthead Subheading--><br><br>
+                <p class="masthead-subheading font-weight-light mb-0" >A software engineer who loves building ideas with code.</p><br>
+                <div class="align-items-center mt-4">
+                    <a class="animated-link" href="#portfolio">
+                        View my work
+                    </a>
+                </div>
             </div>
         </header>
-        
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
+        <section class="page-section bg-primary portfolio" id="portfolio">
+            <div class="container ">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-white mb-0">Projects</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -71,7 +80,7 @@
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white"><h4>Contact Manager</h4><br>Spring / React / MongoDB<br><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/code-r.png" alt="..." />
                         </div>
@@ -113,22 +122,24 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarineCon.png" alt="..." />
-                        </div>
-                    </div>
+                    
+                </div>
+                <br>
+                <div class="text-center align-items-center mt-4">
+                    <a class="animated-link" href="https://github.com/sdeleppo"target="_blank" rel="noopener noreferrer">
+                        View More
+                    </a>
+                </div>
                 </div>
             </div>
         </section>
         <!-- About Section-->
+        
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                
+                <h2 class="page-section-heading text-center  text-white">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -219,7 +230,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center" id="links">
+        <footer class="footer bg-secondary text-center" id="links">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
@@ -243,7 +254,7 @@
             </div>
         </footer>
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
+        <div class="copyright bg-secondary py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Sarah Deleppo 2021</small></div>
         </div>
         <!-- Portfolio Modals-->
@@ -251,15 +262,15 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0 "><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Code Review</h2>
+                                    <h2 class="portfolio-modal-title text-white  mb-0">Contact Manager</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
+                                    <div class="divider-custom divider-light">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -271,18 +282,27 @@
                                       </div>
                                     <!--<img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />-->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This is a simple Java contact manager from class CS-320 at SNHU. It is being used as the base backend code for my capstone project in which I refine this existing project to interact with a React frontend and MongoDB database resulting in a Contact Manager Full Stack project.</p>
-                                    <div class="text-center mt-4">
-                                        <a class="btn btn-primary btn-xl" href="https://github.com/sdeleppo/spring-mongo-react/tree/master/original_code"target="_blank" rel="noopener noreferrer">
-                                            <i class="fas fa-download me-2"></i>
+                                    <div class="container text-white">
+                                        <div class="row">
+                                          <div class="col-lg-9" style="text-align: left">
+                                           Contact Manager Text
+                                          </div>
+                                          <div class="col"style="text-align: left">
+                                            <h4 class="text-light "><u>Methods</u></h4>
+                                            Spring<br>
+                                            React<br>
+                                            Java<br>
+                                            JavaScript<br>
+                                            NoSQL<br>
+                                            Git
+                                          </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="align-items-center mt-4">
+                                        <a class="animated-link" href="https://github.com/sdeleppo/spring-mongo-react"target="_blank" rel="noopener noreferrer">
                                             View Source Code
                                         </a>
-                                        <p></p>
-                                    </div>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    </div><br><br>
                                 </div>
                             </div>
                         </div>
@@ -291,8 +311,8 @@
             </div>
         </div>
         <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
+        <div class="portfolio-modal modal fade " id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl ">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                     <div class="modal-body text-center pb-5">
@@ -312,7 +332,21 @@
                                         <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/4V7MmC1IdPQ" allowfullscreen></iframe>
                                       </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">The artifact developed for the Software Design and Engineering category is a continuation of a previous project from class CS-320 in which we developed a Contact Service Manager that users can utilize to store, update, and manage their contacts. This previous project consisted only of a backend, so I have developed a frontend UI with React to accompany the existing backend. This allows users to access and manage their contacts VIA a web browser rather than solely through the Java code that comprises the backend functionality.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col-lg-9" style="text-align: left">
+                                           PAvilion pummel text
+                                          </div>
+                                          <div class="col"style="text-align: left">
+                                            <h4 class="text-secondary text-uppercase"><u>Methods</u></h4>
+                                            Agile<br>
+                                            C#<br>
+                                            Unity5<br>
+                                            Git<br>
+                                            Blender
+                                          </div>
+                                        </div>
+                                    </div>
                                     <div class="text-center mt-4">
                                         <a class="btn btn-primary btn-xl" href="https://github.com/sdeleppo/Pavilion-Pummel"target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-download me-2"></i>
@@ -354,12 +388,12 @@
                                     <div class="container">
                                         <div class="row">
                                           <div class="col-lg-9" style="text-align: left">
-                                           For a course project, we took on the role of a software engineer contracting for a rescue-animal training company, Grazioso Salvare, who sought a software application that can work with existing data from animal shelters in their network to identify and categorize available dogs for specialized training. Global Rain contracted for full stack development of this application that which included a database and a client-facing web application dashboard, through which users at Grazioso Salvare can access the database as a data table as well as visualize the data through interactive widgets. The interactive widgets include a geolocation chart showing the location of the first animal in the list and a pie chart illustrating the variety of breeds based on the filtered data. See source code for an in-depth README.
+                                           For a course project, I took on the role of a software engineer contracting for a rescue-animal training company, Grazioso Salvare, who sought a software application that can work with existing data from animal shelters in their network to identify and categorize available dogs for specialized training. Global Rain contracted for full stack development of this application which includes a database and a client-facing web application dashboard, through which users at Grazioso Salvare can access the database as a data table as well as visualize the data through interactive widgets. The interactive widgets include a geolocation chart showing the location of the first animal in the list and a pie chart illustrating the variety of breeds based on the filtered data. This application was written in <b>Python</b>, and utilizes a <b>MongoDB</b> database. See source code for an in-depth README.
                                           </div>
                                           <div class="col"style="text-align: left">
-                                            <h4 class="text-secondary text-uppercase"><u>Tools</u></h4>
+                                            <h4 class="text-secondary text-uppercase"><u>Methods</u></h4>
                                             Python<br>
-                                            MongoDB<br>
+                                            NoSQL - MongoDB<br>
                                             Spyder<br>
                                             Dash Framework<br>
                                             Jupyter Notebook
@@ -408,9 +442,20 @@
                                         <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/-TCGNz3KhS4" allowfullscreen></iframe>
                                       </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">The artifact developed for the Database category of the Computer Science program is based on providing a database layer to an existing project from a previous course. In said class, we developed a Contact Manager to allow for users to store, update, and manage their contacts VIA Java code. 
-                                        Previously, contact data was stored at runtime and was erased upon terminating the application. To develop a solution, I had to adjust existing design choices, and opted to create a database layer for the use of this application using MongoDB. 
-                                    </p>
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col-lg-9" style="text-align: left">
+                                           Lazy Murder Text
+                                          </div>
+                                          <div class="col"style="text-align: left">
+                                            <h4 class="text-secondary text-uppercase"><u>Methods</u></h4>
+                                            C#<br>
+                                            Unity5<br>
+                                            Git<br>
+                                            Blender
+                                          </div>
+                                        </div>
+                                    </div>
                                     <div class="text-center mt-4">
                                         <a class="btn btn-primary btn-xl" href="https://github.com/sdeleppo/Lazy-Murder" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-download me-2"></i>
@@ -451,7 +496,21 @@
                                         <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/ygeIDDqUpJA" allowfullscreen></iframe>
                                       </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col-lg-9" style="text-align: left">
+                                           Coming of Darkness 
+                                          </div>
+                                          <div class="col"style="text-align: left">
+                                            <h4 class="text-secondary text-uppercase"><u>Methods</u></h4>
+                                            Agile<br>
+                                            C#<br>
+                                            Unity5<br>
+                                            Git<br>
+                                            Blender
+                                          </div>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -464,37 +523,6 @@
             </div>
         </div>
         <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Check back later!</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarineCon.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Secular+One&display=swap');
 /*!
 * Start Bootstrap - Freelancer v7.0.3 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2021 Start Bootstrap
@@ -9,6 +12,7 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ var(--bs-font-sans-serif);
  */
 :root {
   --bs-blue: #0d6efd;
@@ -21,7 +25,7 @@
   --bs-green: #198754;
   --bs-teal: #1abc9c;
   --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
+  --bs-white: #feffff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #1abc9c;
@@ -32,7 +36,18 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-dark-green: #17252a;
+  --bs-green: #2b7a78;
+  --bs-light-green: #3aafa9;
+  --bs-grey: #def2f1;
+  --bs-mint: #3bba9c;
+  --bs-dark-mint: #242533;
+  --bs-grey-mint: #43455c;
+  --bs-blue-mint: #3c3f58;
+  --bs-light-mint: #b7c0e2;
+
+
+  --bs-font-sans-serif: 'Encode Sans SC', sans-serif, 'Secular One', sans-serif, "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -51,7 +66,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Source Code Pro', monospace;
+  
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -76,7 +92,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:   monospace,'Encode Sans SC', sans-serif, "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
 }
@@ -212,9 +228,60 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #3bba9c;
 }
+.animated-link {
 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #3bba9c;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: 'Source Code Pro';
+ 
+  padding: 0.25em 1.7em;
+  border: 2px solid #3bba9c;
+  transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.animated-link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #3bba9c;
+  transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  z-index: -1;
+}
+.animated-link::after {
+  content: "";
+  display: inline-block;
+  background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+  position: absolute;
+  top: 0;
+  left: calc(100% - 3em);
+  right: 3em;
+  bottom: 0;
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.animated-link:hover {
+  padding: 0.25em 3.1em 0.25em 0.25em;
+}
+.animated-link:hover::before {
+  left: calc(100% - 3em);
+  right: 0;
+  transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.animated-link:hover::after {
+  right: 0;
+  transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
@@ -455,7 +522,40 @@ progress {
 [hidden] {
   display: none !important;
 }
+.typewriter h1 {
+  color: #3bba9c;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    animated-text 2.7s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
 
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-color: orange;}
+  to{border-right-color: transparent;}
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -548,7 +648,9 @@ progress {
   font-size: 0.875em;
   text-transform: uppercase;
 }
-
+.initial a {
+  text-transform: initial;
+}
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
@@ -579,6 +681,11 @@ progress {
   border-radius: 0.5rem;
   max-width: 100%;
   height: auto;
+}
+
+.logo-navbar {
+  width: 2rem !important;
+  height: 2rem !important;
 }
 
 .figure {
@@ -3866,7 +3973,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1abc9c;
+  color: #3bba9c;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3876,7 +3983,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #15967d;
+  color: #3bba9c;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3906,7 +4013,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background-color: #b7c0e2;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -3922,8 +4029,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1abc9c;
+  color: #b7c0e2;
+  background-color: #3bba9c;
 }
 
 .nav-fill > .nav-link,
@@ -3975,6 +4082,7 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+  padding-left: 5rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
@@ -5297,7 +5405,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #242533;
   background-clip: padding-box;
   border: 0.125rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
@@ -7355,7 +7463,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #2c3e50 !important;
+  color: #17252a !important;
 }
 
 .text-success {
@@ -7375,7 +7483,7 @@ textarea.form-control-lg {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #3bba9c !important;
 }
 
 .text-dark {
@@ -7383,7 +7491,7 @@ textarea.form-control-lg {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #b7c0e2 !important;/*not really white*/
 }
 
 .text-body {
@@ -7405,13 +7513,15 @@ textarea.form-control-lg {
 .text-reset {
   color: inherit !important;
 }
-
+.bg-third {
+  background-color: #b7c0e2 !important;
+}
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #242533 !important;
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #242533 !important;
 }
 
 .bg-success {
@@ -7431,7 +7541,7 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #def2f1 !important;
 }
 
 .bg-dark {
@@ -10896,10 +11006,10 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #b7c0e2;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff;
+  color: #b7c0e2;
 }
 
 .btn-xl {
@@ -10920,7 +11030,7 @@ html {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Source Code Pro', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
 #mainNav .navbar-brand {
@@ -10993,8 +11103,15 @@ html {
   font-size: 1.5rem;
   color: #6c757d;
 }
+.vertical-center {
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 
+  display: flex;
+  align-items: center;
+}
 .masthead {
+  height: 100vh;
+  min-height: 500px;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
@@ -11036,7 +11153,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(67, 69, 92, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
